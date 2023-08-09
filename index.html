@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="./assets/css/style.css" />
     <title>Weather-Forecaster</title>
-    <link rel="stylesheet"  href="assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -13,17 +13,17 @@
     <main>
       <div class="display-side">
         <div class="current-weather">
-          <h2>City(MM/DD/YYYY)</h2>
-          <p>Temp: <span>00.00</span>&deg;F</p>
-          <p>Wind: <span>0.00</span> MPH</p>
-          <p>Humidity: <span>00</span>%</p>
+          <h2 class="cityInfo"></h2>
+          <p>Temp: <span class="temp"></span>&deg;F</p>
+          <p>Wind: <span class="wind"></span> MPH</p>
+          <p>Humidity: <span class="hum"></span>%</p>
         </div>
       </div>
       <aside> 
         <h2>Search for a City:</h2>
-        <form action="/submit" method="post">
-          <input type="text" name="city" placeholder="City">
-          <input type="submit" value="Search">
+        <form action="/submit" method="post" class="searchForm">
+          <input class="searchBar" type="text" name="city" placeholder="City" />
+          <button class="submitBtn" type="submit" value="Search">Search</button>
         </form>
         <hr/>
         <button class="clear-history">Clear History</button>
@@ -33,5 +33,6 @@
       </aside>
 
     </main>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

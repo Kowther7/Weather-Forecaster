@@ -1,2 +1,6 @@
-
-  
+var cityInfo = document.querySelector(".cityInfo")
+var temp = document.querySelector(".temp")
+var wind = document.querySelector(".wind")
+var hum = document.querySelector(".hum")
+var searchForm = document.querySelector(".searchForm")
+var searchBar = document.querySelector(".searchBar")

@@ -1,0 +1,151 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background: linear-gradient(to right, #465bb8, #25135f);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  header h1{
+    width: 75%;
+    text-align: center;
+    color: white;
+  }
+  
+  main{
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  /*Left side*/
+  aside{
+    flex: 1 0;
+  }
+
+aside{
+    flex: 1 0;
+  }
+  
+  aside input[type="text"],
+  aside input[type="submit"],
+  aside .history-button,
+  aside .clear-history{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border: none;
+  }
+  
+  aside input[type="text"]{
+    display: block;
+    border: 2px solid grey;
+    padding-left: 10px;
+  }
+  
+  aside input[type="submit"]{
+    background: #6891e3;
+    color: white;
+    border: none;
+  }
+  
+  aside .history-button{
+    background: #aeaeae;
+  }
+  
+  aside .clear-history{
+    background: red;
+  }
+  
+ 
+  .display-side{
+    flex: 3 0;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background: linear-gradient(to right, #465bb8, #25135f);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1{
+    width: 75%;
+    text-align: center;
+    color: white;
+  }
+  
+  main{
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+
+  aside{
+    flex: 1 0;
+  }
+  
+  aside input[type="text"],
+  aside input[type="submit"],
+  aside .history-button,
+  aside .clear-history{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border: none;
+  }
+  
+  aside input[type="text"]{
+    display: block;
+    border: 2px solid grey;
+    padding-left: 10px;
+  }
+  
+  aside input[type="submit"]{
+    background: #6891e3;
+    color: white;
+    border: none;
+  }
+  
+  aside .history-button{
+    background: #aeaeae;
+  }
+  
+  aside .clear-history{
+    background: red;
+  }
+  
+ 
+  .current-weather{
+    border: 1px solid black;
+    margin: 16px;
+    margin-right: 100px;
+    padding-left: 8px;
+  }
+  
+  .current-weather > h2{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  
+  .display-side > h3{
+    margin-left: 16px;
+  }
+  

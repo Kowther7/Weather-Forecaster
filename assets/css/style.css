@@ -148,4 +148,9 @@ aside{
   .display-side > h3{
     margin-left: 16px;
   }
+
+  .forecast-weather {
+    display: flex;
+    justify-content: space-evenly;
+  }
   

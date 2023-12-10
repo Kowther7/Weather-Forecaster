@@ -1,156 +1,197 @@
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  header{
-    background: linear-gradient(to right, #465bb8, #25135f);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
-  
-  header h1{
-    width: 75%;
-    text-align: center;
-    color: white;
-  }
-  
-  main{
-    display: flex; 
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-  
-  /*Left side*/
-  aside{
-    flex: 1 0;
-  }
-
-aside{
-    flex: 1 0;
-  }
-  
-  aside input[type="text"],
-  aside input[type="submit"],
-  aside .history-button,
-  aside .clear-history{
-    box-sizing: border-box;
-    width: 100%;
-    height: 35px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    border: none;
-  }
-  
-  aside input[type="text"]{
-    display: block;
-    border: 2px solid grey;
-    padding-left: 10px;
-  }
-  
-  aside input[type="submit"]{
-    background: #6891e3;
-    color: white;
-    border: none;
-  }
-  
-  aside .history-button{
-    background: #aeaeae;
-  }
-  
-  aside .clear-history{
-    background: red;
-  }
-  
- 
-  .display-side{
-    flex: 3 0;
-  }
-  body{
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  header{
-    background: linear-gradient(to right, #465bb8, #25135f);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  header h1{
-    width: 75%;
-    text-align: center;
-    color: white;
-  }
-  
-  main{
-    display: flex; 
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-  
-
-  aside{
-    flex: 1 0;
-  }
-  
-  aside input[type="text"],
-  aside input[type="submit"],
-  aside .history-button,
-  aside .clear-history{
-    box-sizing: border-box;
-    width: 100%;
-    height: 35px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    border: none;
-  }
-  
-  aside input[type="text"]{
-    display: block;
-    border: 2px solid grey;
-    padding-left: 10px;
-  }
-  
-  aside input[type="submit"]{
-    background: #6891e3;
-    color: white;
-    border: none;
-  }
-  
-  aside .history-button{
-    background: #aeaeae;
-  }
-  
-  aside .clear-history{
-    background: red;
-  }
-  
- 
-  .current-weather{
-    border: 1px solid black;
-    margin: 16px;
-    margin-right: 100px;
-    padding-left: 8px;
-  }
-  
-  .current-weather > h2{
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  
-  .display-side > h3{
-    margin-left: 16px;
-  }
-
   .forecast-weather {
     display: flex;
     justify-content: space-evenly;
   }
+  body {
+    font-family: "Playfair Display", serif;
+  }
   
+  /* ------- Header ------- */
+  .title {
+    padding: 5px;
+    background: linear-gradient(to right, #465bb8, #25135f);
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  .weather-icon {
+    column-width: 3;
+    padding: 0;
+  }
+  
+  /* ------- Search for City ------- */
+  .container {
+    margin: 2%;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .nav-bar {
+    width: 20%;
+    margin: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  /* ------- Buttons ------- */
+  .search-button,
+  .clear-button,
+  .past-city button {
+    display: inline-block;
+    border: 2px solid #f8f9fa;
+    background: linear-gradient(to right, #465bb8, #25135f);
+    color: #f8f9fa;
+    padding: 8px 16px;
+    margin: 8px 0;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .search-button:hover,
+  .clear-button:hover,
+  .past-city button:hover {
+    background: linear-gradient(to right, #465bb8, #25135f);
+    color: black;
+  }
+  
+  .past-city button:active {
+    background-color: #0056b2;
+  }
+  
+  .past-city button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ------- Past Searches ------- */
+  .past-city {
+    border-top: 2px solid black;
+  }
+  
+  /* ------- Weather Forecast Display ------- */
+  .forecast-display {
+    width: 75%;
+  }
+  
+  /* ------- Current Day ------- */
+  .current-day {
+    display: flex;
+    margin-left: 40px;
+    background: linear-gradient(to right, #465bb8, #25135f);
+    justify-content: flex-start;
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-title h2,
+  .text-top {
+    padding: 1%;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  #weather-icon-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ------- Predictions ------- */
+  .forecast-predictions {
+    display: flex;
+    padding: 8px 16px;
+    margin-left: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .future-blocks {
+    display: flex;
+    margin-left: 40px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  
+  #FiveDays {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #f8f9fa;
+    margin: 5px;
+    padding: 0px 0px 7px 6px;
+    align-items: left;
+  }
+  
+  /* Modal Message */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    position: relative;
+  }
+  
+  #errorText {
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  .close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* ------- Footer ------- */
+  footer {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+  }

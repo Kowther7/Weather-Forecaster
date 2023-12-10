@@ -135,7 +135,7 @@
   #FiveDays {
     flex-grow: 1;
     flex-basis: 0;
-    background-color: #f8f9fa;
+  background: linear-gradient(to right, #1399d7);
     margin: 5px;
     padding: 0px 0px 7px 6px;
     align-items: left;
